@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Coustomer Model Form</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body style="background-color:rgb(116, 108, 108) ;">
+       <form method="post">
+         {% csrf_token %}
+         <div align="container">
+         <h1 class="text-center">Customer Management System</h1>
+         <div class="form-control">
+         <table>{{forms}}</table>
+         <button type="submit">Add_Customer</button>
+         <button type="search">Search_Customer</button>
+         <button type="delete">Delete_Customer</button>
+         <button type="update">Update_Customer</button>
+         <button type="show_all">Show_All_Customer</button>
+</div>
+</div>
+
+       </form>  
+</body>
+</html>
